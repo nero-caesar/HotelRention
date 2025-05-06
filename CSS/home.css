@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero-nav{
+    display: flex;
+    flex-direction: column;
+    background-image: url('homepics/download.png');
+    gap: 125px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 20px;
+}
+.a{
+    color: rgb(255, 195, 118);
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Nunito sans';
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-bottom: 0px;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 195, 118);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+nav a:hover{
+    color: rgb(255, 195, 118);
+    border-bottom: 200px;
+}
+nav a:hover::after{
+    transform: scaleX(1);
+}
+.hero-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 150px;
+}
+.hero-sect p{
+    font-family: 'Nunito sans';
+    color: rgb(232, 191, 150);
+    font-size: 20px;
+}
+.hero-sect h1{
+    font-family: 'Nanum Myeongjo';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    width: 800px;
+}
