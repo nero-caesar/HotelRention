@@ -5,7 +5,7 @@
 .hero-nav{
     display: flex;
     flex-direction: column;
-    background-image: url('homepics/download.png');
+    background-image: url('Assets/');
     gap: 125px;
 }
 nav{
