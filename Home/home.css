@@ -26,7 +26,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 150px;
     padding-top: 20px;
 }
 .a{
@@ -56,6 +56,17 @@ nav a:hover{
 }
 nav a:hover::after{
     transform: scaleX(1);
+}
+.nav-line{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav-line hr{
+    border: none;
+    background-color: rgb(255, 195, 118);
+    width: 35px;
+    height: 2px;
 }
 .hero-sect{
     display: flex;
@@ -446,4 +457,13 @@ nav a:hover::after{
     user-select: none;
     flex: 0 0 auto;
     width: 230px;
+}
+
+@media screen and (max-width : 768px) {
+    nav a{
+        display: none;
+    }
+    .nav-line{
+        display: flex;
+    }
 }
