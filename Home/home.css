@@ -2,11 +2,25 @@
     margin: 0;
     padding: 0;
 }
+.section1{
+    background-color: rgba(0, 0, 0, 0.447);
+    height: 710px;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -3;
+    opacity: 1;
+}
 .hero-nav{
     display: flex;
     flex-direction: column;
-    background-image: url('Assets/');
-    gap: 125px;
+    background-image: url('/Assets/home/hotel2-2.mp4');
+    position: relative;
+    z-index: 1;
+    gap: 150px;
 }
 nav{
     display: flex;
@@ -39,7 +53,6 @@ nav a::after{
 }
 nav a:hover{
     color: rgb(255, 195, 118);
-    border-bottom: 200px;
 }
 nav a:hover::after{
     transform: scaleX(1);
@@ -48,8 +61,8 @@ nav a:hover::after{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding-bottom: 150px;
+    position: relative;
+    gap: 10px;
 }
 .hero-sect p{
     font-family: 'Nunito sans';
@@ -62,4 +75,375 @@ nav a:hover::after{
     color: rgb(255, 255, 255);
     font-size: 60px;
     width: 800px;
+}
+
+#bgImage{
+    background-image: url("/Assets/home/luxury and comfort.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed; /* Use fixed to cover screen like video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -2;
+    transition: opacity 0.5s ease;
+}
+
+.section1-btn {
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    gap: 1030px; /* distance between left/right arrows */
+    transform: translateY(-50%); /* vertically centers the buttons */
+    z-index: 3;
+}
+.section1-btn button {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color:  rgb(255, 195, 118);
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.4); /* Optional: background circle */
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+.section1-btn button:hover {
+    transform: scale(1.2); /* Less dramatic scaling */
+}
+.section1-btn button:active{
+    transform: scale(0.8);
+}
+
+.section2{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url('/Assets/home/your_comfort_bg1.png');
+    gap: 25px;
+    width: 100%;
+    height: 85vh;
+}
+.section2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 0.5px solid rgba(0, 0, 0, 0.123);
+    width: 260px;
+    height: 210px;
+    margin-bottom: 6%;
+}
+.section2 img{
+    position: absolute;
+    margin-top: -200px;
+}
+.section2 h1{
+    display: flex;
+    align-items: center;
+    font-family: 'Nanum Myeongjo';
+    font-size: 70px;
+    gap: 5px;
+}
+.section2 p{
+    font-family: 'Nunito sans';
+    font-size: 15px;
+}
+.p{
+    transform: scale(2);
+}
+
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 100px;
+}
+.section3 h1{
+    text-align: center;
+    font-size: 50px;
+}
+.section3-div4{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.section3-div3{
+    position: relative;
+    height: 600px;
+    width: 450px;
+}
+.section3-div11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Assets/home/services1.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    width: 100%;
+    height: 94%;
+}
+.section3-div12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Assets/home/services2.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    width: 100%;
+    height: 94%;
+}
+.section3-div11:hover,
+.section3-div12:hover{
+    height: 87%;
+}
+.section3-div11:hover .section3-div2,
+.section3-div12:hover .section3-div2{
+    bottom: 0%;
+}
+.section3-div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition: bottom 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    gap: 20px;
+    width: 97%;
+    height: 97%;
+}
+.section3-div2 p,
+.section3-div2 h3{
+    transition: color 0.5s;
+    color: white;
+    width: 300px;
+}
+.section3-div2 h3:hover{
+    color: rgb(255, 195, 118);
+}
+.section3-div2 a{
+    text-decoration: none;
+    color: rgb(255, 195, 118);
+    position: relative;
+    transition: color 0.5s;
+}
+.section3-div2 a:hover{
+    color: white;
+}
+.section3-div2 a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 2px;
+    border-bottom: solid 2px;
+    transition: width 0.5s;
+    left: 1px;
+}
+.section3-div2 a:hover::before{
+    width: 0%;
+}
+
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Assets/home/skyline-bg.png);
+    gap: 70px;
+    width: 100%;
+    height: 110vh;
+    padding-top: 100px;
+}
+.section4 h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.section4-div4{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.section4-div3{
+    position: relative;
+    height: 600px;
+    width: 450px;
+}
+.section4-div11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Assets/home/exclusive_suite.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    width: 100%;
+    height: 94%;
+}
+.section4-div12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Assets/home/luxury_suite.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    width: 100%;
+    height: 94%;
+}
+.section4-div11:hover .section4-div2,
+.section4-div12:hover .section4-div2{
+    bottom: 0%;
+}
+.section4-div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition: bottom 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    gap: 20px;
+    width: 97%;
+    height: 97%;
+}
+.section4-div2 p,
+.section4-div2 h3{
+    transition: color 0.5s;
+    color: white;
+    width: 300px;
+}
+.section4-div2 h3:hover{
+    color: rgb(255, 195, 118);
+}
+.section4-div2 a{
+    text-decoration: none;
+    color: rgb(255, 195, 118);
+    position: relative;
+    transition: color 0.5s;
+}
+.section4-div2 a:hover{
+    color: white;
+}
+.section4-div2 a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 2px;
+    border-bottom: solid 2px;
+    transition: width 0.5s;
+    left: 1px;
+}
+.section4-div2 a:hover::before{
+    width: 0%;
+}
+
+
+.section5{
+    display: flex;
+    gap: 10px;
+}
+.section5 h1{
+    font-size: 50px;
+}
+.section5 p{
+    font-size: 20px;
+    line-height:40px;
+    width: 415px;
+}
+.section5-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.section5-div1 img{
+    width: 790px;
+}
+.section5-div2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section5-div2 img{
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 345px;
+    width: 560px;
+}
+.section5-div2 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color 0.3s;
+}
+.section5 a:hover{
+    color: rgb(255, 195, 118);
+}
+.section5 a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 22%;
+    height: 2px;
+    border-bottom: solid 2px;
+    transition: width 0.5s;
+    left: 1px;
+}
+.section5 a:hover::before{
+    width: 0%;
+}
+.section5-div3{
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    white-space: nowrap;;
+    top: -90px;
+    width: 790px;
+}
+.section5-div3::-webkit-scrollbar {
+    display: none;
+}
+.section5-div3 img{
+    display: inline-block;
+    user-select: none;
+    flex: 0 0 auto;
+    width: 230px;
 }
