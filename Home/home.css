@@ -459,6 +459,26 @@ nav a:hover::after{
     width: 230px;
 }
 
+
+.section6 button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color:  white;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.4);
+    transition: transform 0.3s ease; 
+}
+.section6 button:hover {
+    transform: scale(1.2);
+}
+.section6 button:active{
+    transform: scale(0.8);
+}
+
 @media screen and (max-width : 768px) {
     nav a{
         display: none;
