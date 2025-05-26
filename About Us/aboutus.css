@@ -16,7 +16,12 @@ body p{
 .header{
     display: flex;
     justify-content: center;
+    background-color: black;
 }
+.headermob{
+    display: flex;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -63,11 +68,13 @@ nav a:hover::after{
     align-items: end;
     margin-top: 60px;
 }
-.hamburger span{
+.headermob .hamburger span{
     background-color: rgb(255, 195, 118);;
     width: 30px;
     height: 2px;
     border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .hero-sect{
     display: flex;
@@ -272,6 +279,9 @@ nav a:hover::after{
     margin-bottom: 90px;
     font-weight: 10;
 }
+.your .textmob{
+    display: none;
+}
 .fourth .your .col{
     width: 200px;
     height: 200px;
@@ -426,6 +436,13 @@ nav a:hover::after{
     font-size: 50px;
     font-weight: 50;
 }
+.insight{
+    display: flex;
+}
+.insightmob{
+    display: none;
+    
+}
 .sixth .blog .graphic{
     width: 180px;
     height: 180px;
@@ -576,6 +593,10 @@ nav a:hover::after{
     margin-left: 90px;
     gap: 30px;
 }
+.last .quotemob{
+    display: none;
+
+}
 .quote img{
     width: 70px;
     height: 70px;
@@ -618,3 +639,376 @@ nav a:hover::after{
     font-size: 23px;
 }
 
+/* Responsive Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #222;
+  padding: 0 24px;
+  height: 70px;
+  position: relative;
+  z-index: 1000;
+  align-items: flex-end;
+}
+.logo img {
+  height: 50px;
+}
+.nav-links {
+  display: flex;
+  gap: 40px;
+  margin-left: auto; /* Add this line to push links to the right */
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.2s;
+}
+.nav-links a.a {
+  color: rgb(255, 195, 118);
+}
+.nav-links a:hover {
+  color: rgb(255, 195, 118);
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+}
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: rgb(255, 195, 118);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #222;
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    display: none;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links a {
+    padding: 18px 0;
+    width: 100%;
+    text-align: start;
+    border-bottom: 1px solid #333;
+    margin-left: 20px;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: -40px;
+  }
+}
+/* Mobile-first header color and responsive layout */
+@media (max-width: 768px) {
+  .hero-nav {
+    background-size: cover;
+    background-position: center;
+    gap: 60px;
+    height: 70px;
+    background-color: black;
+    /* background-image: none; */
+  }
+
+  .hero-nav nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    display: flex;
+    
+    /* background-color: black; */
+/* justify-content: center; */
+/* align-items: center; */
+
+}
+nav img{
+    width: 60px;
+    height: 50px;
+    margin-right: 80px;
+    justify-content: center;
+}
+  .header nav a {
+    color: white;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+  }
+.header{
+    display: none;
+    flex-direction: row;
+}
+.headermob{
+    display: flex;
+    height: 500px;
+    gap: 50px;
+}
+ .headermob img{
+    width: 70px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+ }
+ .headermob .ham .hamburger {
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 70px;
+ }
+ .headermob .hamburger:active span:nth-child(2){
+    opacity: 0;
+ }
+ .headermob .hamburger:active span:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+ }
+ .headermob .hamburger:active span:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+ }
+ .header nav a{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transform: 0.3s;
+ }
+.hero-sect{
+    background-image: url(/Assets/about\ us/title-banner2.png);
+    background-size: cover;
+    position: absolute;
+    width: 320px;
+    top: 70px;
+}
+  .hero-sect h1 {
+    font-size: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second {
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 400px;
+  }
+
+  .second img {
+    width: 100%;
+    height: auto;
+  }
+
+  .second .text h1 {
+    font-size: 32px;
+  }
+
+  .second .text p {
+    font-size: 16px;
+  }
+
+  .onetwo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .abt, .two .abt {
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+  }
+  .third{
+    height: 150px;
+  }
+  .third h1 {
+    font-size: 30px;
+    width: 90%;
+    margin-top: 150px;
+  }
+
+  .fourth {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 200px;
+  }
+.fourth .fot{
+    height: 500px;
+    width: 90%;
+    padding: 20px;
+}
+.fourth .big{
+    height: 500px;
+    width: 90%;
+    padding: 20px;
+}
+.your .text{
+    display: none;
+}
+.your .textmob{
+    display: flex;
+    /* margin-bottom: 200px; */
+    margin-right: 50px;
+}
+  .your .textmob h1{
+    font-size: 27px;
+    font-weight: 50;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+.reroom{
+    display: flex;
+    flex-direction: column;
+}
+.staff{
+    display: flex;
+    flex-direction: column;
+}
+.col{
+    width: 50px;
+}
+  .trust h1 {
+    font-size: 30px;
+  }
+
+  .trust .clients {
+    flex-direction: column;
+    animation: none;
+    gap: 20px;
+  }
+
+  .fifth {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .fifth .word {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+
+  }
+
+  .fifth .word hr {
+    width: 200px;
+  }
+ 
+
+  .fifth a button {
+    width: 150px;
+    height: 150px;
+    font-size: 16px;
+    margin-right: 70px;
+  }
+
+  .sixth .blog {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: start;
+  }
+  .insight{
+    display: none;
+  }
+  .blog .insightmob{
+    display: flex;
+    /* gap: 100px; */
+    /* justify-content: center; */
+  }
+  .blog .insightmob h1{
+    font-size: 25px;
+  }
+  .blog .insightmob .graphic{
+    width: 100px;
+    height: 100px;
+  }
+
+  .oth {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+  }
+
+  .oth .unione,
+  .oth .unitwo {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+  }
+.last .quote{
+    display: none;
+}
+  .last .quotemob {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    gap: 30px;
+    width: 250px;
+    height: 500px;
+    margin-left: 15px;
+  }
+  .last .quotemob img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+
+  .last .quotemob .all h1{
+    font-size: 23px;
+    font-weight: 50;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .ceo{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+  }
+  .last .ceo .ewo {
+    width: 50px;
+    height: 50px;
+  }
+  .ceo span{
+    font-size: 20px;
+  }
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
