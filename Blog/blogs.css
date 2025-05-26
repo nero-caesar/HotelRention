@@ -76,13 +76,58 @@ nav a:hover::after{
     width: 1150px;
     height: 550px;
 }
-.blog video{
+.pagination{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 40px 0;
+}
+.page{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 140, 100, 0.6);
+    color: black;
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease
+}
+.page:hover{
+    color: white;
+    background: rgba(255, 140, 100, 0.9);
+    transform: scale(1.1);
+}
+.page.active{
+    background: rgba(255, 140, 100, 1);
+    font-weight: bold;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog img{
     margin-top: 60px;
     width: 1150px;
+    height: 550px;
 }
 .arrange{
     display: flex;
     flex-direction: column;
+}
+.arrange h1{
+    margin-top: 20px;
+    margin-left: -0px;
+    color: rgb(71, 71, 71);
+}
+.arrange h4{
+    margin-top: 30px;
+    margin-left: -0px;
+    color: rgb(36, 34, 34);
 }
 .blog button{
     height: 55px;
@@ -92,12 +137,34 @@ nav a:hover::after{
     border: none;
     margin-left: -960px;
     margin-top: 40px;
-    color: #000000;
+    color: black;
     background-color: #e8bf96;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
-.blog a{
-    color: ;
+.blog button:hover{
+    color: #e8bf96;
+    background: black;
+    transform: scale(1.05);
+}
+.write-up{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    margin-left: -0px;
+}
+.write-up a{
     text-decoration: none;
+    margin-top: 50px;
+    color: #e8bf96;
+} 
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
