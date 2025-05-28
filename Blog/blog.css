@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero-nav{
+    background-image: url(../Assets/Blog/title-banner2.png);
+    display: flex;
+    flex-direction: column;
+    
+    gap: 125px;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 20px;
+}
+.a{
+    color: rgb(255, 195, 118);
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Nunito sans';
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-bottom: 0px;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 195, 118);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+nav a:hover{
+    color: rgb(255, 195, 118);
+    border-bottom: 200px;
+}
+nav a:hover::after{
+    transform: scaleX(1);
+}
+.hero-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 150px;
+}
+.hero-sect p{
+    font-family: 'Nunito sans';
+    color: rgb(232, 191, 150);
+    font-size: 20px;
+}
+.hero-sect h1{
+    font-family: 'Nanum Myeongjo';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    width: 800px;
+}
+.writeup{
+    background-color: rgb(18, 18, 20);
+    width: 1200px;
+    height: 350px;
+    
+}
+main{
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-bottom: 80px;
+}
+h1{
+    color: rgb(209, 148, 35);
+    font-size: 150px;
+    font-weight: 500px;
+}
+.clu{
+    display: flex;
+    padding: 40px;
+}
+h2{
+    color: aliceblue;
+    font-style: italic;
+    padding-top: 20px;
+    width: 960px;
+    font-size: 33px;
+}
+p{
+    color:rgb(209, 148, 35); 
+    padding-left: 125px;
+}
+.men img{
+    width: 1200px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+h4{
+    color: rgb(221, 172, 109);
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+h5{
+    padding-left: 80px;
+    background-color: rgb(221, 172, 109);
+    color: rgb(234, 236, 236);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.la{
+    padding-bottom: 30px;
+}
+button{
+    background-color: rgb(247, 198, 135);
+    margin-left: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-bottom: 40px;
+    border: none;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background: black;
+    color: rgb(247, 198, 135);
+    transform: scale(1.05);
+    
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    margin-right: 100px;
+}
+.btn a{
+    width: 40px;
+    height: 40px;
+
+}
+.btn a button{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 200%;
+}
+.btn a button:hover{
+    background-color: rgb(240, 201, 150);
+    color: white;
+}
