@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+Warang+Citi&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.hero-nav{
+    display: flex;
+    flex-direction: column;
+    background-image:url(restuarnat_hero_img.png) ;
+    height: 820px;
+    background-size: auto ;
+    background-repeat: no-repeat;
+    gap: 1rem;
+    background-size: contain;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 20px;
+}
+.a{
+    color: rgb(255, 195, 118);
+}
+nav a{
+    transform: translateY(5px);
+    text-decoration: none;
+    font-family: "K2D",sans-serif;
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-bottom: 0px;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 195, 118);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+nav a:hover{
+    color: rgb(255, 195, 118);
+    border-bottom: 200px;
+}
+nav a:hover::after{
+    transform: scaleX(1);
+}
+.hero-sect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+.hero-sect h1{
+    display: block;
+    font-family: 'Nanum Myeongjo';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 55px;
+    width: 800px;
+    transform: translateY(145px);
+}
+.body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.img{
+    transform: translateY(66px);
+    margin-left: -210px;
+    height: 80px;
+}
+
+
+.img2{
+    display: flex;
+    justify-content: right;
+    width: 150px;
+    height: 200px;
+    margin-right: -100px;
+    transform: translateY(129px);
+}
+.text h1{
+    font-family: 'Nanum Myeongjo';
+    font-size: 55px;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    transform: translateY(170px);
+   
+}
+.text p{
+    text-align: center;
+    font-family: "K2D",sans-serif;
+    margin-bottom: 60px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 350px;
+}
+.images .img3 img,.images .img5 img{
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.img3{
+    transform: translateY(209px);
+    margin-left: 20px;
+}
+.img3 img{
+    height: 260px;
+}
+.img4 img{
+    width: 700px;
+}
+.img5{
+    transform: translateY(-99px);
+}
+.img5 img{
+    width: 300px;
+    height: 230px;
+}
+.banner{
+    margin-top: 140px;
+    background-image: url(../Assets/experience_bg.png);
+    height: 720px;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-bottom: 60px;
+    
+}
+.words h1{
+    text-align: center;
+    font-family: 'Nanum Myeongjo';
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    transform: translateY(285px);
+    display: flex;
+    margin-left: 350px;
+}
+
+@keyframes slidefromleft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(10);
+        opacity: 1;
+    }
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    transform: translateY(420px);
+    height: 150px;
+    width: 1000px;
+
+    margin-left: 190px;
+}
+.horizontal{
+    margin-left: 190px;
+    transform: translateY(420px);
+    display: flex;
+    width: 1000px;
+    height: 2px;
+    background-color:  rgb(255, 195, 118);
+}
+.v1{
+    background-color:  rgb(255, 195, 118);
+    width: 2px;
+    height: 60px;
+    transform: translateY(-50px);
+    display: flex;
+    margin-left: 300px;
+    
+}
+.first-box{
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    gap: 20px;
+}
+.first-box h1{
+    transform: translateY(30px);
+    color: white;
+    font-family: "K2D",sans-serif;
+}
+.first-box p{
+    transform: translateY(30px);
+    color: white;
+    font-family: "K2D",sans-serif;
+}
+.second-box{
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    gap: 20px;
+}
+.second-box h1{
+    transform: translateY(30px);
+    color: white;
+    font-family: "K2D",sans-serif;
+}
+
+.second-box p1{
+    transform: translateY(30px);
+    color: white;
+    font-family: "K2D",sans-serif;
+}
+.v2{
+    background-color:  rgb(255, 195, 118);
+    width: 2px;
+    height: 60px;
+    transform: translateY(-50px);
+    display: flex;
+    margin-left: 300px;
+}
+.box{
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    gap: 20px;
+}
+.box h1{
+    transform: translateY(30px);
+    color: white;
+    font-family: "K2D",sans-serif;
+}
+.box p2{
+    transform: translateY(30px);
+    color: white;
+    font-family: "K2D",sans-serif;
+}
+
+.box h1:hover{
+    color:  rgb(255, 195, 118);
+}
+.second-box h1:hover{
+    color:  rgb(255, 195, 118);
+}
+.first-box h1:hover{
+    color:  rgb(255, 195, 118);
+}
+.video-section{
+    display: flex;
+    justify-content: center;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    width: 350px;
+    height: 600px;
+    margin-top: 40px;
+    transform: translateX(-250px);
+    animation: slidefromright 1s ease-out forwards;
+}
+.cont h1{
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+    font-size: 48px;
+}
+.line1 s1{
+    height: 1px;
+    color: #333;
+}
+.my-video{
+    width: 470px;
+    height: 690px;
+    margin-bottom: 40px;
+    object-fit: cover;
+    transform: translateX(-200px);
+    animation: slidefromleft 1s ease-out forwards;
+
+}
+span{
+color:  rgb(255, 195, 118);
+transform: translateY(40px);
+}
+.line1{
+    display: flex;
+    gap: 40px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+     white-space: nowrap;
+}
+.line2{
+    display: flex;
+    gap: 68px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 16px;
+    white-space: nowrap;
+}
+.line3{
+    white-space: nowrap;
+    display: flex;
+    gap: 40px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+}
+.line4{
+    white-space: nowrap;
+    display: flex;
+    gap: 90px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+}
+.class{
+    transform: translateY(90px);
+    display: flex;
+    justify-content: center;
+}
+.video2{
+    width: 470px;
+    height: 690px;
+    margin-bottom: 40px;
+    object-fit: cover;
+    transform: translateX(850px);
+    animation: slidefromright 1s ease-out forwards;
+}
+@keyframes slidefromright{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(20);
+    }
+}
+.cont2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    width: 860px;
+    height: 600px;
+    margin-top: 40px;
+    transform: translateX(-440px);
+    animation: slidefromleft 1s ease-out forwards;
+}
+.cont2 h1{
+    display: flex;
+    justify-content: end;
+    font-family: "K2D",sans-serif;
+    margin-right: 70px;
+    margin-top: 26px;
+    font-size: 48px;
+}
+.line5{
+    display: flex;
+    gap: 40px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+     white-space: nowrap;
+}
+.line6{
+    display: flex;
+    gap: 68px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 16px;
+    white-space: nowrap;
+}
+.line7{
+    white-space: nowrap;
+    display: flex;
+    gap: 80px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+}
+.line8{
+    white-space: nowrap;
+    display: flex;
+    gap: 90px;
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+}
+.video{
+    transform: translateY(90px);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+.cont3 h1{
+    font-family: "K2D",sans-serif;
+    margin-left: 70px;
+    margin-top: 26px;
+    font-size: 48px;
+}
+.cont3{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    width: 860px;
+    height: 600px;
+    margin-top: 40px;
+    transform: translateX(10px);
+    margin-bottom: 50px;
+    animation: slidefromright 1s ease-out forwards ;
+    
+}
+
+
+.video3{
+    width: 470px;
+    height: 690px;
+    margin-bottom: 40px;
+    object-fit: cover;
+    transform: translateX(70px);
+    animation: slidefromleft 1s ease-out forwards;
+}
+
+.p-body{
+    display: flex;
+    margin-top: 280px;
+    background-color: burlywood;
+    height: 300px;
+    margin-bottom: 100px;
+}
+.p-body h1{
+    font-family: 'Nanum Myeongjo' ;
+    margin-left: 100px;
+    transform: translateY(100px);
+}
+.contact{
+    display: flex;
+}
+.contact p{
+    transform: translateX(245px);
+    margin-top: 100px;
+    font-family: "K2D",sans-serif;
+}
+.contact button{
+    transform: translateX(350px);
+    border-radius: 200px;
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: "K2D",sans-serif;
+    font-size: 18px;
+}
+button:hover{
+    color: rgb(255, 195, 118);
+}
+.contact p:hover{
+    color: white;
+}
+.dir{
+    margin-top: 130px;
+    width: 120px;
+    height: 1px;
+    background-color: white;
+    transform: translateX(375px);
+}
+.hidden{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.slide-in{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 769px){
+    body{
+        width: 320px;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .hero-nav{
+        align-items: center;
+        height: 900px;
+        width: 1900px;
+
+    }
+    nav{
+        display: none;
+      
+    }
+    nav img{
+        height: 70px;
+    }
+    .hero-sect h1{
+        position: relative;
+        top: 100px;
+        right: 340px;
+        font-size: 8rem;
+        font-family: 'Nanum Myeongjo';
+    }
+   
+    .text h1{
+        font-size: 6.5rem;
+        position: relative;
+        top: -120px;
+        right: -550px;
+        white-space: nowrap;
+        overflow-wrap: normal;
+    }
+    .text p{
+        font-size: 4rem;
+        line-height: 1.5;
+        display: block;
+        padding: 1rem;
+        position: relative;
+        top: -50px;
+         right: -550px;
+    }
+    .img img{
+       display: none;
+    }
+    .img2 img{
+        display: none;
+    }
+    
+    .img3 img{
+        position: relative;
+        left: 1440px;
+        height: 700px;
+        width: 950px;
+         top: -440px;
+    }
+      .img4 img{
+         position: relative;
+        left: 480px;
+        height: 500px;
+        width: 950px;
+         top: 500px;
+    }
+      .img5 img{
+         position: relative;
+        right: 480px;
+        height: 700px;
+        width: 950px;
+         top: 1130px;
+    }
+    .banner{
+        position: relative;
+        top: 900px;
+        height: 1000px;
+        width: 1500px;
+        margin-bottom: 900px;
+    }
+    .cont{
+        position: relative;
+        left: 600px;
+        top: 190px;
+        margin-top: 100px;
+    }
+    .my-video{
+          position: relative;
+        left: 600px;
+        top: 190px;
+    }
+     .cont2{
+        position: relative;
+        left: 600px;
+        top: 190px;
+    }
+    .video2{
+          position: relative;
+        left: 600px;
+        top: 190px;
+    }
+     .cont3{
+        position: relative;
+        left: 600px;
+        top: 190px;
+    }
+    .video3{
+          position: relative;
+        left: 600px;
+        top: 190px;
+    }
+    .p-body{
+        width: 1500px;
+    }
+    video{
+        height: 20px;
+
+    }
+    .words h1{
+        position: relative;
+        font-size: 3.5rem;
+        top: -220px;
+        right: 140px;
+         white-space: nowrap;
+        overflow-wrap: normal;
+    }
+    .first-box h1 {
+        font-size: 2.5rem;
+         white-space: nowrap;
+    }
+
+    .first-box p {
+        font-size: 2rem;
+    }
+      .second-box h1 {
+        font-size: 2.5rem;
+    }
+    .second-box p1 {
+        font-size: 2rem;
+    }
+      .box h1 {
+        font-size: 2.5rem;
+        white-space: nowrap;
+    }
+    .box p2{
+        font-size: 2rem;
+    }
+    .container{
+        position: relative;
+         top: -220px;
+        right: 100px;
+        height: 200px;
+        width: 1100px;
+    }
+    .horizontal{
+          position: relative;
+         top: -220px;
+        right: 140px;
+         width: 1100px;
+    }
+
+}
