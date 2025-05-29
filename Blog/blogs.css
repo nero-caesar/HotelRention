@@ -76,6 +76,17 @@ nav a:hover::after{
     width: 1150px;
     height: 550px;
 }
+.blog a{
+    color: rgb(255, 195, 118);
+    text-decoration: none;
+}
+.arrange .link {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
 .pagination{
     display: flex;
     gap: 10px;
