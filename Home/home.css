@@ -439,7 +439,7 @@ nav a:hover::after{
     scroll-behavior: smooth;
     scrollbar-width: none;
     white-space: nowrap;
-    gap: 20px;
+    gap: 50px;
     top: -90px;
     width: 790px;
 }
@@ -725,33 +725,62 @@ footer a:hover{
     }
     .section2{
         flex-direction: column;
+        height: 220vh;
+        gap: 10vh;
     }
-    .section5{
+    .section3{
+        align-items: center;
+        padding-top: 50px;
+        gap: 30px;
+    }
+    .section3 h1{
+        font-size: 35px;
+        width: 270px;
+    }
+    .section3-div4{
         flex-direction: column;
+        gap: 20px;
     }
-    .section5-div2 img,
-    .section5-div1 img{
-        position: static;
-        margin: 0;
-        width: 95vw;
-        height: 40vh;
+    .section3-div3{
+        width: 90vw;
     }
-    .section5-div1 p,
-    .section5-div1 a{
+    .section4{
+        align-items: center;
+        padding-top: 50px;
+        height: 140vh;
+        gap: 40px;
+    }
+    .section4 h1{
+        font-size: 30px;
+    }
+    .section4-div4{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section4-div3{
+        width: 90vw;
+        height: 70vh;
+    }
+    .section5-div1{
+        align-items: start;
+    }
+    .section5-div1 h1{
+        font-size: 8vw;
+        width: 50vw;
+    }
+    .section5-div1 p{
         display: flex;
+        width: 80vw;
     }
-    .section5-div2{
-        justify-content: center;
+    .section5-div1 img{
+        width: 95vw;
+        height: 60vw;
     }
-    .section5-div2 p,
-    .section5-div2 a{
+    .section5-div2 p{
         display: none;
     }
-    .section5-div3{
-        width: 100vw;
-    }
     .section5-div3 img{
-        top: 0px;
-        width: 60%;
+        width: 250px;
+        height: 150px;
     }
 }
