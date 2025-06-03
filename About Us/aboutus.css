@@ -8,7 +8,7 @@ body p{
 .hero-nav{
     display: flex;
     flex-direction: column;
-    background-image: url(/Assets/about\ us/title-banner2.png);
+    background-image: url(../Assets/Blog/title-banner2.png);
     background-size: cover;
     gap: 125px;
     height: 600px;
@@ -21,7 +21,8 @@ body p{
 .headermob{
     display: flex;
 }
-.navbar{}
+
+
 nav{
     display: flex;
     align-items: center;
@@ -888,7 +889,7 @@ nav img{
     font-size: 18px;
     flex-direction: column;
   }
-.header{
+/* .header{
     display: none;
     flex-direction: row;
 }
@@ -902,8 +903,8 @@ nav img{
     height: 50px;
     margin-top: 10px;
     margin-left: 20px;
- }
- .headermob .ham .hamburger {
+ } */
+ /* .headermob .ham .hamburger {
     display: flex;
     position: absolute;
     top: -30px;
@@ -917,11 +918,11 @@ nav img{
  }
  .headermob .hamburger:active span:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
- }
+ } */
  .navbar{
     display: flex;
  }
- .header nav a{
+ /* .header nav a{
     position: fixed;
     left: -100%;
     top: 70px;
@@ -931,9 +932,9 @@ nav img{
     width: 100%;
     text-align: center;
     transform: 0.3s;
- }
+ } */
 .hero-sect{
-    background-image: url(/Assets/about\ us/title-banner2.png);
+    background-image: url(../Assets/Blog/title-banner2.png);
     background-size: cover;
     position: absolute;
     width: 320px;

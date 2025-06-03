@@ -114,24 +114,22 @@ h3{
 }
 h5{
     padding-left: 80px;
-    background-color: rgb(221, 172, 109);
-    color: rgb(234, 236, 236);
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 15px;
+    /* background-color: rgb(221, 172, 109);   */
     font-weight: 100;
+    font-size: 20px;
+    height: 30px;
     margin-bottom: 30px;
+    align-items: center;
+    /* text-align: center; */
 }
 .la{
     padding-bottom: 30px;
 }
-button{
+.la button{
     background-color: rgb(247, 198, 135);
     margin-left: 80px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 12px;
-    padding-top: 12px;
+   width: 190px;
+   height: 55px;
     margin-bottom: 40px;
     border: none;
     transition: all 0.3s ease;
@@ -142,28 +140,160 @@ button:hover{
     transform: scale(1.05);
     
 }
-.btn {
+.btn{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 50px;
-    margin-right: 100px;
-}
-.btn a{
-    width: 40px;
-    height: 40px;
-
+    gap: 20px;
+    position: absolute;
+    left: 50%;
 }
 .btn a button{
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    align-items: center;
-    border-radius: 200%;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Nunito sans';
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e8bf96;
+    border: none;
+    border-radius: 100%;
 }
 .btn a button:hover{
-    background-color: rgb(240, 201, 150);
+    background-color: #000;
+    color: #e8bf96;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.section7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/Assets/home/your_comfort_bg1.png');
+    padding: 100px 0 0 0;
+    gap: 50px;
+    margin-top: 100px;
+}
+.section7-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    gap: 40px;
+}
+form h1{
+    font-size: 50px;
+}
+form p{
+    letter-spacing: 7px;
+    font-size: 30px;
+}
+form input,
+form textarea{
+    outline: none;
+    border: 1px solid black;
+    width: 430px;
+    height: 50px;
+    padding-left: 20px;
+}
+form input:hover,
+form textarea:hover{
+    border: 1px solid rgb(255, 195, 118);
+}
+form input:focus,
+form textarea:focus{
+    border: 1.5px solid rgb(255, 195, 118);
+}
+form textarea{
+    resize: none;
+    height: 100px;
+    padding-top: 20px;
+}
+.section7-div2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+form button{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(232, 191, 150);
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+form button:hover{
+    background-color: rgb(255, 178, 78);
+}
+.section7-div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 70px 0;
+    background-color: rgba(232, 191, 150, 0.8);
+}
+.section7-div3 h1{
+    font-size: 45px;
+    width: 730px;
+}
+.section7-div4{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.section7-div4 p{
+    font-size: 20px;
+}
+.section7-div4 hr{
+    border: none;
+    background-color: white;
+    width: 2px;
+    height: 200px;
+}
+.section7-div4 button{
+    border: none;
     color: white;
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 17px;
+}
+.section7-div4 button:hover{
+    background-color: rgba(121, 69, 0, 0.7);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0 30px 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+footer a:hover{
+    color: rgb(255, 178, 78);
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.footer-div1{
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    font-size: 18px;
 }

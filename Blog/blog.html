@@ -10,9 +10,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <script src="blog.js"></script>
     <title>Document</title>
 </head>
 <body>
+<header class="navbar">
+  <div class="logo">
+    <img src="../Assets/rooms/luxestay_logo.png" alt="Logo">
+  </div>
+  <nav class="nav-links" id="nav-links">
+    <a href="../Home/home.html">Home</a>
+    <a href="#">Rooms</a>
+    <a href="../About Us/aboutus.html">About Us</a>
+    <a href="../Blog/blog.html" class="a">Blog</a>
+    <a href="../Restaurant/restaurant.html">Restaurant</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
     <section class="hero-nav">
         <nav>
           <img src="../Assets/rooms/luxestay_logo.png" alt="">
@@ -21,6 +39,11 @@
             <a href="../About Us/aboutus.html">About Us</a>
             <a href="../Blog/blog.html" class="a">Blog</a>
             <a href="../Restaurant/restaurant.html">Restaurant</a>
+            <div class="nav-line">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
         </nav>
         <div class="hero-sect">
           <h1>BLOG</h1>
@@ -29,7 +52,7 @@
 
     <div class="blog">
         <img src="../Assets/Blog/blog_detail8.png" alt="">
-        <div class="arrange">
+        <div class="arrange-one">
           <div class="link">
 <a href="">19 JUL, 2024 </a>
           <a href="">TRAVEL TIPS,</a>
@@ -43,9 +66,11 @@
         <button>VIEW MORE &rarr;</button>
 
         <img src="../Assets/Blog/blog_detail7.png" alt="">
-        <div class="arrange">
+        <div class="arrange-two">
+           <div class="link">
           <a href="">19 JUL, 2024 </a>
           <a href="">BUDGET TRAVEL</a>
+          </div>
           <h1>Stay in Comfort Without Breaking the Bank</h1>
           <h4>In today's world, achieving comfort doesn't necessarily mean spending a fortune. You can maintain a cozy and 
             stylish living environment while ...</h4>
@@ -53,19 +78,23 @@
         <button>VIEW MORE &rarr;</button>
 
         <img src="../Assets/Blog/blog_detail6.png" alt="">
-        <div class="arrange">
+        <div class="arrange-three">
+           <div class="link">
           <a href="">19 JUL, 2024 </a>
           <a href="">BEST HOTELS</a>
           <h1>Dive into Luxury</h1>
+          </div>
           <h4>where every detail is meticulously curated to ensure an unforgettable escape from the ordinary. 
             Indulge in an unparalleled journey where every moment ...</h4>
         </div>
         <button>VIEW MORE &rarr;</button>
 
         <img src="../Assets/Blog/blog_list5.png" alt="">
-        <div class="arrange">
+        <div class="arrange-four">
+           <div class="link">
           <a href="">19 JUL, 2024 </a>
           <a href="">DESTINATION GUIDES</a>
+          </div>
           <h1>Discover the Best Hotels: A Traveller's Guide</h1>
           <h4>When embarking on a journey, selecting the right hotel can significantly enhance your travel experience. 
             A great hotel does more than provide a bed an...</h4>
@@ -73,9 +102,11 @@
         <button>VIEW MORE &rarr;</button>
 
         <img src="../Assets/Blog/blog_detail4.png" alt="">
-        <div class="arrange">
+        <div class="arrange-five">
+           <div class="link">
           <a href="">19 JUL, 2024 </a>
           <a href="">TRAVEL TIPS</a>
+          </div>
           <h1>How to Book the Best Hotel Deals</h1>
           <h4>Hotel prices can vary significantly based on the time of the year, day of the week, and local events. 
             Being flexible with your travel dates can help you find the...</h4>
@@ -85,14 +116,68 @@
         <video autoplay muted loop playsinline id="video">
         <source src="../Assets/Blog/video2.mp4" type="video/mp4">
         </video>
-        <div class="arrange">
+        <div class="arrange-six">
+           <div class="link">
           <a href="">19 JUL, 2024 </a>
           <a href="">BEST HOTELS</a>
+          </div>
           <h1>Top 10 Luxury Hotels</h1>
           <h4>this resort offers a unigue blend of luxury and nature. The property features private villas with plunge pools. 
             Perched on the top floors of the Toky...</h4>
+          
+          
         </div>
         <button>VIEW MORE &rarr;</button>
     </div>
+    <div class="btn">
+        <a href="../Blog/blog.html"><button>1</button></a>
+        <a href="../Blog2/blog2.html"><button>2</button></a>
+    </div>
+      <section class="section7">
+        <form action="">
+            <div class="section7-div1">
+                <p>Get Special Journy</p>
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <div class="section7-div2">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="section7-div2">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="section7-div2">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type Message" required></textarea>
+            </div>
+            <button type="submit">CHECK AVAILABILITY</button>
+        </form>
+        <div class="section7-div3">
+            <h1>LET’S START YOUR JOURENY WITH STAYEASE</h1>
+            <div class="section7-div4">
+                <p>+1 502 6251 7802</p>
+                <hr>
+                <button>CONTACT US</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div></div>
+        <div class="footer-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="">Rooms</a>
+            <a href="../About Us/aboutus.html">About Us</a>
+            <a href="../Blog/blog.html">Blog</a>
+            <a href="../Restaurant/restaurant.html">Restaurant</a>
+
+        </div>
+        <hr>
+        <div class="footer-div1">
+            <p>&copy; Luxestay. All Rights Reserved.</p>
+            <a href="">Privacy Policy</a>
+        </div>
+    </footer>
 </body>
 </html>
