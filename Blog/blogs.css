@@ -45,6 +45,7 @@ nav a:hover{
 nav a:hover::after{
     transform: scaleX(1);
 }
+<<<<<<< HEAD
 .nav-line{
     display: none;
 }
@@ -63,6 +64,8 @@ header.navbar{
     align-items: end;
     margin-top: 60px;
 }
+=======
+>>>>>>> 787c999ad22709920830b86af18c18dd4c74a177
 .hero-sect{
     display: flex;
     flex-direction: column;
@@ -144,6 +147,7 @@ header.navbar{
     width: 1150px;
     height: 550px;
 }
+<<<<<<< HEAD
 .arrange-one{
     display: flex;
     flex-direction: column;
@@ -214,6 +218,22 @@ header.navbar{
     color: #000;
     transition: all 0.3s ease;
 }
+=======
+.arrange{
+    display: flex;
+    flex-direction: column;
+}
+.arrange h1{
+    margin-top: 20px;
+    margin-left: -0px;
+    color: rgb(71, 71, 71);
+}
+.arrange h4{
+    margin-top: 30px;
+    margin-left: -0px;
+    color: rgb(36, 34, 34);
+}
+>>>>>>> 787c999ad22709920830b86af18c18dd4c74a177
 .blog button{
     height: 55px;
     width: 190px;
@@ -232,12 +252,16 @@ header.navbar{
     background: black;
     transform: scale(1.05);
 }
+<<<<<<< HEAD
 .blog video{
     width: 1150px;
     height: 700px;
     margin-top: 60px;
 }   
 /* .write-up{
+=======
+.write-up{
+>>>>>>> 787c999ad22709920830b86af18c18dd4c74a177
     display: flex;
     position: relative;
     gap: 10px;
@@ -247,6 +271,7 @@ header.navbar{
     text-decoration: none;
     margin-top: 50px;
     color: #e8bf96;
+<<<<<<< HEAD
 }  */
 .btn{
     display: flex;
@@ -271,6 +296,10 @@ header.navbar{
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+=======
+} 
+
+>>>>>>> 787c999ad22709920830b86af18c18dd4c74a177
 .fade-in{
     opacity: 0;
     transform: translateY(20px);
@@ -279,6 +308,7 @@ header.navbar{
 .fade-in.visible{
     opacity: 1;
     transform: translateY(0);
+<<<<<<< HEAD
 }
 .section7{
     display: flex;
@@ -675,3 +705,6 @@ header.navbar{
     gap: 10px;
   }
 }
+=======
+}
+>>>>>>> 787c999ad22709920830b86af18c18dd4c74a177
