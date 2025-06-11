@@ -1140,6 +1140,56 @@ nav img{
   .ceo span{
     font-size: 20px;
   }
+  form{
+        width: 95vw;
+        height: 120vh;
+        gap: 20px;
+    }
+    form h1{
+        font-size: 30px;
+    }
+    form p{
+        font-size: 20px;
+    }
+    form input,
+    form textarea{
+        width: 80vw;
+    }
+    form button{
+        width: 87vw;
+    }
+    .section7-div3{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section7-div3 h1{
+        font-size: 30px;
+        width: 90vw;
+        line-height: 70px;
+    }
+    .section7-div4{
+        flex-direction: column;
+    }
+    .section7-div4 hr{
+        width: 90vw;
+        height: 2px;
+    }
+    .footer-links{
+        align-items: start;
+    }
+    .footer-links1{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-links2{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-div1{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
