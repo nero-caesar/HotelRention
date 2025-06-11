@@ -262,7 +262,22 @@ header.navbar{
     height: 700px;
     margin-top: 60px;
 }   
+<<<<<<< HEAD
 
+=======
+/* .write-up{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    margin-left: -0px;
+}
+.write-up a{
+    text-decoration: none;
+    margin-top: 50px;
+    color: #e8bf96;
+<<<<<<< HEAD
+}  */
+>>>>>>> 9b11869165120ed7c262790e2c79c89833b468b3
 .btn{
     display: flex;
     gap: 20px;
@@ -286,6 +301,10 @@ header.navbar{
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b11869165120ed7c262790e2c79c89833b468b3
 .fade-in{
     opacity: 0;
     transform: translateY(20px);
@@ -294,6 +313,10 @@ header.navbar{
 .fade-in.visible{
     opacity: 1;
     transform: translateY(0);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9b11869165120ed7c262790e2c79c89833b468b3
 }
 .section7{
     display: flex;
