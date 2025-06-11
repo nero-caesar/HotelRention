@@ -1,16 +1,15 @@
-/* Base styles - these apply to all screen sizes unless overridden */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Added for better box model handling */
+    box-sizing: border-box; 
 }
 
 .hero-nav {
     display: flex;
     flex-direction: column;
     background-image: url('/Assets/rooms/room_hero_img1.png');
-    background-size: cover; /* Ensures the background image covers the area */
-    background-position: center; /* Centers the background image */
+    background-size: cover; 
+    background-position: center; 
     height: 700px;
     gap: 125px;
     margin-bottom: 50px;
@@ -22,7 +21,7 @@ nav {
     justify-content: center;
     gap: 150px;
     padding-top: 20px;
-    flex-wrap: wrap; /* Allows navigation items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .a {
@@ -35,7 +34,7 @@ nav a {
     position: relative;
     color: rgb(255, 255, 255);
     border-bottom: 0px;
-    white-space: nowrap; /* Prevents navigation links from breaking */
+    white-space: nowrap; 
 }
 
 nav a::after {
@@ -65,7 +64,7 @@ nav a:hover::after {
     align-items: center;
     gap: 30px;
     padding-bottom: 150px;
-    text-align: center; /* Center align text for better mobile display */
+    text-align: center;
 }
 .hero-sect h1 {
     font-family: 'Nanum Myeongjo';
@@ -91,21 +90,21 @@ nav a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensure form container takes full width */
+    width: 100%; 
 }
 
 .slidecontainer {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow slideshows to wrap */
+    flex-wrap: wrap;
 }
 
 .slideshow-grid {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Ensure grid takes full width */
-    align-items: center; /* Center items in the column */
+    width: 100%; 
+    align-items: center; 
 }
 
 .slideshow-pair {
@@ -346,7 +345,7 @@ form textarea {
     outline: none;
     border: 1px solid black;
     width: 430px;
-    max-width: 95%; /* Make inputs responsive */
+    max-width: 95%;
     height: 50px;
     padding-left: 20px;
     box-sizing: border-box; 
@@ -438,7 +437,7 @@ form button:hover {
     height: 150px;
     border-radius: 50%;
     font-size: 17px;
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0; 
 }
 
 .section7-div4 button:hover {
@@ -449,8 +448,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 50px 20px 30px 20px; /* Add horizontal padding */
-    text-align: center; /* Center footer content */
+    padding: 50px 20px 30px 20px;
+    text-align: center;
 }
 
 footer a {
@@ -468,16 +467,16 @@ footer a:hover {
 .footer-links2 {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Reduce gap for smaller screens */
-    flex-wrap: wrap; /* Allow links to wrap */
+    gap: 30px; 
+    flex-wrap: wrap; 
 }
 
 .footer-div1 {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Reduce gap for smaller screens */
+    gap: 50px; 
     font-size: 18px;
-    flex-direction: column; /* Stack on smaller screens */
+    flex-direction: column; 
     align-items: center;
 }
 
@@ -487,15 +486,15 @@ a {
 
 /* --- Media Queries --- */
 
-/* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
     .hero-nav {
-        height: 500px; /* Adjust hero height */
+        height: 500px; 
         gap: 50px;
     }
 
     nav {
-        flex-direction: column; /* Stack navigation items */
+        flex-direction: column;
         gap: 15px;
         padding-top: 15px;
     }
@@ -507,22 +506,22 @@ a {
 
     .Availability-form {
         padding: 15px;
-        top: -50px; /* Adjust position */
-        max-width: 95%; /* Even smaller max-width */
+        top: -50px;
+        max-width: 95%; 
     }
 
     .availability-form {
-        flex-direction: column; /* Stack form fields */
+        flex-direction: column; 
         gap: 15px;
     }
 
     .field {
-        width: 100%; /* Full width for fields */
-        min-width: unset; /* Remove min-width */
+        width: 100%;
+        min-width: unset; 
     }
 
     .check-btn button {
-        width: 100px; /* Smaller button */
+        width: 100px; 
         height: 100px;
         font-size: 14px;
     }
@@ -530,11 +529,11 @@ a {
     .mini-slideshow-container {
         margin-right: 0;
         margin-bottom: 25px;
-        width: 100%; /* Full width for slideshows */
+        width: 100%; 
     }
 
     .sisf-e-price {
-        bottom: 150px; /* Adjust price position */
+        bottom: 150px; 
         left: 10px;
         max-width: calc(100% - 20px);
     }
@@ -555,7 +554,7 @@ a {
     }
 
     form {
-        height: auto; /* Auto height for form */
+        height: auto; 
         padding: 15px;
     }
 
@@ -571,7 +570,7 @@ a {
     form input,
     form textarea,
     form button {
-        width: 90%; /* Adjust width for inputs and button */
+        width: 90%; 
     }
 
     .section7-div3 h1 {
@@ -580,18 +579,18 @@ a {
     }
 
     .section7-div4 {
-        flex-direction: column; /* Stack contact info */
+        flex-direction: column;
         gap: 20px;
     }
 
     .section7-div4 hr {
-        display: none; /* Hide hr on small screens */
+        display: none; 
     }
 
     .footer-links,
     .footer-links1,
     .footer-links2 {
-        flex-direction: column; /* Stack footer links */
+        flex-direction: column; 
         gap: 10px;
     }
 
@@ -600,7 +599,7 @@ a {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px to 768px) */
+
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .hero-nav {
         height: 600px;
@@ -622,18 +621,18 @@ a {
     }
 
     .availability-form {
-        flex-wrap: wrap; /* Allow wrapping but not full column stack */
+        flex-wrap: wrap; 
         gap: 20px;
     }
 
     .field {
-        width: 45%; /* Two fields per row */
+        width: 45%; 
     }
 
     .mini-slideshow-container {
         margin-right: 0;
         margin-bottom: 25px;
-        width: 90%; /* Wider on tablet */
+        width: 90%; 
     }
 
     .sisf-e-price {
@@ -650,7 +649,7 @@ a {
     }
 
     .sisf-e-excerpt {
-        width: auto; /* Let content determine width */
+        width: auto; 
         max-width: 100%;
     }
 
@@ -674,7 +673,7 @@ a {
     }
 }
 
-/* Medium devices (landscape tablets, 769px to 992px) */
+
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     .hero-nav {
         height: 650px;
@@ -691,12 +690,12 @@ a {
     }
 
     .mini-slideshow-container {
-        width: 45%; /* Adjust width for two columns */
+        width: 45%; 
         margin-right: 25px;
     }
 
     .slideshow-pair {
-        justify-content: space-around; /* Distribute pairs */
+        justify-content: space-around; 
     }
 
     .sisf-e-price {
@@ -713,14 +712,14 @@ a {
     }
 }
 
-/* Large devices (laptops/desktops, 993px to 1200px) */
+
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     .Availability-form {
-        max-width: 1000px; /* Slightly smaller for this range */
+        max-width: 1000px;
     }
 
     .mini-slideshow-container {
-        width: 480px; /* Adjust specific width */
+        width: 480px; 
         margin-right: 30px;
     }
 }
