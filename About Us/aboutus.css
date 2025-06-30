@@ -35,7 +35,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: serif;
     position: relative;
     color: rgb(255, 255, 255);
     border-bottom: 0px;
@@ -125,7 +125,7 @@ nav a:hover::after{
     justify-content: center;
     opacity: 0;
     transform: translateX(-100%);
-    animation: slideInFromLeft 1s ease-out forwards;
+    animation: slideInFromLeft 5s ease-out forwards;
 }
 @keyframes slideInFromLeft {
     to {
@@ -846,7 +846,7 @@ footer a:hover{
     width: 100%;
     text-align: start;
     border-bottom: 1px solid #333;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
   .hamburger {
     display: flex;

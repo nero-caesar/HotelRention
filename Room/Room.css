@@ -57,6 +57,9 @@ nav a:hover {
 nav a:hover::after {
     transform: scaleX(1);
 }
+.nav-line{
+    display: none; 
+}
 
 .hero-sect {
     display: flex;

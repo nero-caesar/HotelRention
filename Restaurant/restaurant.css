@@ -28,7 +28,7 @@ nav{
 nav a{
     transform: translateY(5px);
     text-decoration: none;
-    font-family: "K2D",sans-serif;
+    font-family: "K2D",serif;
     position: relative;
     color: rgb(255, 255, 255);
     border-bottom: 0px;
@@ -637,7 +637,7 @@ footer a:hover{
     gap: 800px;
     font-size: 18px;
 }
-@media only screen and (max-width: 769px){
+@media (max-width: 768px){
     body{
         width: 320px;
         height: 100%;

@@ -262,22 +262,7 @@ header.navbar{
     height: 700px;
     margin-top: 60px;
 }   
-<<<<<<< HEAD
 
-=======
-/* .write-up{
-    display: flex;
-    position: relative;
-    gap: 10px;
-    margin-left: -0px;
-}
-.write-up a{
-    text-decoration: none;
-    margin-top: 50px;
-    color: #e8bf96;
-<<<<<<< HEAD
-}  */
->>>>>>> 9b11869165120ed7c262790e2c79c89833b468b3
 .btn{
     display: flex;
     gap: 20px;
@@ -301,10 +286,7 @@ header.navbar{
     transform: scale(1.1);
     transition: all 0.3s ease;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 9b11869165120ed7c262790e2c79c89833b468b3
 .fade-in{
     opacity: 0;
     transform: translateY(20px);
@@ -313,10 +295,6 @@ header.navbar{
 .fade-in.visible{
     opacity: 1;
     transform: translateY(0);
-<<<<<<< HEAD
-=======
-
->>>>>>> 9b11869165120ed7c262790e2c79c89833b468b3
 }
 .section7{
     display: flex;
@@ -555,6 +533,7 @@ header.navbar{
     gap: 5px;
     font-size: 14px;
     margin-left: 80px;
+    margin-top: 10px;
   }
     .arrange-one br{
     display: none;
@@ -579,6 +558,7 @@ header.navbar{
     font-size: 14px;
     margin-left: 130px;
     width: 200px;
+    margin-top: 10px;
   }
   .arrange-two h1{
     font-size: 30px;
@@ -598,12 +578,86 @@ header.navbar{
     flex-direction: column;
     gap: 5px;
     font-size: 14px;
-    margin-left: 50px;
+    margin-left: 90px;
+    margin-top: 10px;
   }
   .arrange-three h1{
     font-size: 30px;
     font-weight: 50;
+    margin-left:5px;
+  }
+  .arrange-three p{
+    font-size: 20px;
+    margin-left: 5px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  }
+  .arrange-four .link{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  .arrange-four h1{
+    font-size: 30px;
+    font-weight: 50;
+    margin-left:80px;
+  }
+  .arrange-four p{
+     font-size: 20px;
+    margin-left: 5px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  }
+  .arrange-five .link{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+  .arrange-five br{
+    display: none;
+  }
+  .arrange-five h1{
+     font-size: 30px;
+    font-weight: 50;
+    margin-left:80px;
+  }
+  .arrange-five p{
+     font-size: 20px;
+    margin-left: 5px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  }
+  .arrange-six .link{
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 135px;
+    margin-top: 10px;
+  }
+   .arrange-six h1{
+    font-size: 30px;
+    font-weight: 50;
     margin-left: 130px;
+  }
+  .arrange-six p{
+     font-size: 20px;
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  } 
+  .btn{
+    margin-top: 100px;
   }
 
   form{

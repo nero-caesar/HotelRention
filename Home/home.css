@@ -677,10 +677,11 @@ footer a:hover{
         height: 50vh;
         top: -50vh;
         transition: top 0.5s ease-in-out;
+        margin-top: 6px;
     }
     .menu a{
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: start;
         text-decoration: none;
         font-family: 'Nunito sans';
@@ -688,13 +689,39 @@ footer a:hover{
         width: 100%;
         height: 10vh;
         padding-left: 20px;
+        margin-top: 20px;
+        font-size: 18px;
     }
-    .menu a:hover{
-        color: rgb(255, 195, 118);
+    .menu a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 195, 118);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
     }
+    .menu .a a:hover{
+    color: rgb(255, 195, 118);
+    border-bottom: 200px;
+    }
+    .menu .a a:hover::after{
+    transform: scaleX(1);
+    }
+   
     .menu .a{
         color: rgb(255, 195, 118);
     }
+    .menu a {
+    /* padding: 18px 0; */
+    width: 100%;
+    text-align: start;
+    border-bottom: 1px solid #333;
+    /* margin-left: 20px; */
+  }
     nav{
         background-color: black;
         padding: 8px 0;
@@ -715,7 +742,7 @@ footer a:hover{
         border: none;
         background-color: rgb(255, 195, 118);
         width: 35px;
-        height: 2px;
+        height: 1px;
         transition: 1s ease-in-out;
     }
     .bg-video{
