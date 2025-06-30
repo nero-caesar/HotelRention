@@ -8,7 +8,7 @@ body p{
 .hero-nav{
     display: flex;
     flex-direction: column;
-    background-image: url(/Assets/about\ us/title-banner2.png);
+    background-image: url(../Assets/Blog/title-banner2.png);
     background-size: cover;
     gap: 125px;
     height: 600px;
@@ -21,7 +21,8 @@ body p{
 .headermob{
     display: flex;
 }
-.navbar{}
+
+
 nav{
     display: flex;
     align-items: center;
@@ -34,7 +35,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: serif;
     position: relative;
     color: rgb(255, 255, 255);
     border-bottom: 0px;
@@ -124,7 +125,7 @@ nav a:hover::after{
     justify-content: center;
     opacity: 0;
     transform: translateX(-100%);
-    animation: slideInFromLeft 1s ease-out forwards;
+    animation: slideInFromLeft 5s ease-out forwards;
 }
 @keyframes slideInFromLeft {
     to {
@@ -845,7 +846,7 @@ footer a:hover{
     width: 100%;
     text-align: start;
     border-bottom: 1px solid #333;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
   .hamburger {
     display: flex;
@@ -888,7 +889,7 @@ nav img{
     font-size: 18px;
     flex-direction: column;
   }
-.header{
+/* .header{
     display: none;
     flex-direction: row;
 }
@@ -902,8 +903,8 @@ nav img{
     height: 50px;
     margin-top: 10px;
     margin-left: 20px;
- }
- .headermob .ham .hamburger {
+ } */
+ /* .headermob .ham .hamburger {
     display: flex;
     position: absolute;
     top: -30px;
@@ -917,11 +918,11 @@ nav img{
  }
  .headermob .hamburger:active span:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
- }
+ } */
  .navbar{
     display: flex;
  }
- .header nav a{
+ /* .header nav a{
     position: fixed;
     left: -100%;
     top: 70px;
@@ -931,9 +932,9 @@ nav img{
     width: 100%;
     text-align: center;
     transform: 0.3s;
- }
+ } */
 .hero-sect{
-    background-image: url(/Assets/about\ us/title-banner2.png);
+    background-image: url(../Assets/Blog/title-banner2.png);
     background-size: cover;
     position: absolute;
     width: 320px;
@@ -1139,6 +1140,56 @@ nav img{
   .ceo span{
     font-size: 20px;
   }
+  form{
+        width: 95vw;
+        height: 120vh;
+        gap: 20px;
+    }
+    form h1{
+        font-size: 30px;
+    }
+    form p{
+        font-size: 20px;
+    }
+    form input,
+    form textarea{
+        width: 80vw;
+    }
+    form button{
+        width: 87vw;
+    }
+    .section7-div3{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section7-div3 h1{
+        font-size: 30px;
+        width: 90vw;
+        line-height: 70px;
+    }
+    .section7-div4{
+        flex-direction: column;
+    }
+    .section7-div4 hr{
+        width: 90vw;
+        height: 2px;
+    }
+    .footer-links{
+        align-items: start;
+    }
+    .footer-links1{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-links2{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-div1{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);

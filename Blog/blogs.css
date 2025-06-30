@@ -45,6 +45,24 @@ nav a:hover{
 nav a:hover::after{
     transform: scaleX(1);
 }
+.nav-line{
+    display: none;
+}
+
+
+header.navbar{
+    display: none;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+    width: 70%;
+    justify-content: end;
+    align-items: end;
+    margin-top: 60px;
+}
 .hero-sect{
     display: flex;
     flex-direction: column;
@@ -85,7 +103,7 @@ nav a:hover::after{
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .pagination{
     display: flex;
@@ -121,24 +139,105 @@ nav a:hover::after{
     align-items: center;
     flex-direction: column;
 }
+.blog br{
+  display: none;
+}
 .blog img{
     margin-top: 60px;
     width: 1150px;
     height: 550px;
 }
-.arrange{
+.arrange-one{
     display: flex;
     flex-direction: column;
+    margin-left: 70px;
 }
-.arrange h1{
-    margin-top: 20px;
-    margin-left: -0px;
+.arrange-one h1{
+    /* margin-top: 20px; */
+    margin-right: 30px;
     color: rgb(71, 71, 71);
 }
-.arrange h4{
+.arrange-one h4{
     margin-top: 30px;
-    margin-left: -0px;
+    margin-right: 50px;
     color: rgb(36, 34, 34);
+}
+.arrange-two{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    /* margin-right: 100px; */
+}
+
+.arrange-two h1{
+    margin-top: 20px;
+    margin-right: 30px;
+    color: rgb(71, 71, 71);
+}
+.arrange-two h4{
+    margin-top: 30px;
+    margin-right: 50px;
+    color: rgb(36, 34, 34);
+}
+.arrange-three{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.arrange-three h1{
+    margin-top: 20px;
+    margin-left: -210px;
+    color: rgb(71, 71, 71);
+}
+.arrange-three h4{
+    margin-top: 2 0px;
+    margin-right: 50px;
+    color: rgb(36, 34, 34);
+}
+.arrange-four{
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(71, 71, 71);
+    margin-left: 50px;
+}
+.arrange-five{
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(71, 71, 71);
+    margin-left: 75px;
+}
+.arrange-six{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(71, 71, 71);
+    margin-right: 60px;
+}
+.arrange-one,
+.arrange-two,
+.arrange-three,
+.arrange-four,
+.arrange-five,
+.arrange-six{
+  margin-right: 200px;
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(255, 195, 118);
+    font-family: 'Nunito sans';
+
+}
+.link a:hover{
+    color: #000;
+    transition: all 0.3s ease;
 }
 .blog button{
     height: 55px;
@@ -158,17 +257,35 @@ nav a:hover::after{
     background: black;
     transform: scale(1.05);
 }
-.write-up{
+.blog video{
+    width: 1150px;
+    height: 700px;
+    margin-top: 60px;
+}   
+
+.btn{
     display: flex;
-    position: relative;
-    gap: 10px;
-    margin-left: -0px;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
 }
-.write-up a{
+.btn a button{
     text-decoration: none;
-    margin-top: 50px;
+    color: #000;
+    font-family: 'Nunito sans';
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e8bf96;
+    border: none;
+    border-radius: 100%;
+}
+.btn a button:hover{
+    background-color: #000;
     color: #e8bf96;
-} 
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
 
 .fade-in{
     opacity: 0;
@@ -178,4 +295,513 @@ nav a:hover::after{
 .fade-in.visible{
     opacity: 1;
     transform: translateY(0);
+}
+.section7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/Assets/home/your_comfort_bg1.png');
+    padding: 100px 0 0 0;
+    gap: 50px;
+    margin-top: 100px;
+}
+.section7-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    gap: 40px;
+}
+form h1{
+    font-size: 50px;
+}
+form p{
+    letter-spacing: 7px;
+    font-size: 30px;
+}
+form input,
+form textarea{
+    outline: none;
+    border: 1px solid black;
+    width: 430px;
+    height: 50px;
+    padding-left: 20px;
+}
+form input:hover,
+form textarea:hover{
+    border: 1px solid rgb(255, 195, 118);
+}
+form input:focus,
+form textarea:focus{
+    border: 1.5px solid rgb(255, 195, 118);
+}
+form textarea{
+    resize: none;
+    height: 100px;
+    padding-top: 20px;
+}
+.section7-div2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+form button{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(232, 191, 150);
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+form button:hover{
+    background-color: rgb(255, 178, 78);
+}
+.section7-div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 70px 0;
+    background-color: rgba(232, 191, 150, 0.8);
+}
+.section7-div3 h1{
+    font-size: 45px;
+    width: 730px;
+}
+.section7-div4{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.section7-div4 p{
+    font-size: 20px;
+}
+.section7-div4 hr{
+    border: none;
+    background-color: white;
+    width: 2px;
+    height: 200px;
+}
+.section7-div4 button{
+    border: none;
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 17px;
+}
+.section7-div4 button:hover{
+    background-color: rgba(121, 69, 0, 0.7);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0 30px 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+footer a:hover{
+    color: rgb(255, 178, 78);
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.footer-div1{
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        background-color: black;
+    }
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #000;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    display: none;
+    z-index: 100
+    ;
+  }
+  .nav-links.active {
+    display: flex;   /* <-- SHOW WHEN ACTIVE */
+  }
+  .nav-links a {
+    padding: 18px 0;
+    width: 100%;
+    text-align: start;
+    border-bottom: 1px solid #333;
+    margin-left: 20px;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: -40px;
+  }
+
+  .hamburger.hamburger span{
+    height: 1px;
+  }
+
+  .header nav a {
+    color: white;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+  }
+    /* General Fixes */
+  .hero-nav {
+    background-size: cover;
+    background-position: center;
+    gap: 60px;
+    height: auto;
+    /* padding: 20px 10px; */
+  }
+
+  .hero-nav nav {
+    display: none; /* Hide desktop nav */
+  }
+header.navbar{
+    display: flex;
+}
+.navbar a{
+    display: flex;
+}
+  .hero-sect h1 {
+    font-size: 32px;
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .hero-sect p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .blog img,
+  .blog video {
+    width: 80%;
+    height: auto;
+  }
+
+  .blog button {
+    margin-left: -65px;
+    width: 200px;
+  }
+  
+  .btn {
+    flex-wrap: wrap;
+    position: static;
+    justify-content: center;
+  }
+
+  .btn a button {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .arrange-one .link {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+    .arrange-one br{
+    display: none;
+    }
+  .arrange-one h1{
+    font-size: 30px;
+    font-weight: 50;
+    margin-left: 70px;
+  }
+  .arrange-one p{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 200px;
+    padding-left: 30px;
+  }
+  .arrange-two .link{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 130px;
+    width: 200px;
+    margin-top: 10px;
+  }
+  .arrange-two h1{
+    font-size: 30px;
+    font-weight: 50;
+    margin-left: 130px;
+  }
+ 
+  .arrange-two p{
+     font-size: 20px;
+    margin-left: 100px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 30px;
+  }
+  .arrange-three .link{
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  .arrange-three h1{
+    font-size: 30px;
+    font-weight: 50;
+    margin-left:5px;
+  }
+  .arrange-three p{
+    font-size: 20px;
+    margin-left: 5px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  }
+  .arrange-four .link{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 90px;
+    margin-top: 10px;
+  }
+  .arrange-four h1{
+    font-size: 30px;
+    font-weight: 50;
+    margin-left:80px;
+  }
+  .arrange-four p{
+     font-size: 20px;
+    margin-left: 5px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  }
+  .arrange-five .link{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+  .arrange-five br{
+    display: none;
+  }
+  .arrange-five h1{
+     font-size: 30px;
+    font-weight: 50;
+    margin-left:80px;
+  }
+  .arrange-five p{
+     font-size: 20px;
+    margin-left: 5px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  }
+  .arrange-six .link{
+     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 135px;
+    margin-top: 10px;
+  }
+   .arrange-six h1{
+    font-size: 30px;
+    font-weight: 50;
+    margin-left: 130px;
+  }
+  .arrange-six p{
+     font-size: 20px;
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 80px;
+  } 
+  .btn{
+    margin-top: 100px;
+  }
+
+  form{
+        width: 95vw;
+        height: 120vh;
+        gap: 20px;
+    }
+    form h1{
+        font-size: 30px;
+    }
+    form p{
+        font-size: 20px;
+    }
+    form input,
+    form textarea{
+        width: 80vw;
+    }
+    form button{
+        width: 87vw;
+    }
+    .section7-div3{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section7-div3 h1{
+        font-size: 30px;
+        width: 90vw;
+        line-height: 70px;
+    }
+    .section7-div4{
+        flex-direction: column;
+    }
+    .section7-div4 hr{
+        width: 90vw;
+        height: 2px;
+    }
+    .footer-links{
+        align-items: start;
+    }
+    .footer-links1{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-links2{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-div1{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+/* Responsive Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 0 24px;
+  height: 70px;
+  position: relative;
+  z-index: 1000;
+}
+.logo img {
+  height: 50px;
+}
+.nav-links a {
+    padding: 18px 0;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  align-items: start;
+  margin-left: 20px;
+  /* position: relative; */
+  transition: color 0.2s;
+}
+.nav-links a.a {
+  color: rgb(255, 195, 118);
+}
+.nav-links a:hover {
+  color: rgb(255, 195, 118);
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+}
+.hamburger span {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: rgb(255, 195, 118);
+  border-radius: 2px;
+  transition: all 0.3s;
+  gap: 10px;
+}
+
+/* Hamburger to X animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #000;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+  }
+  .nav-links.active {
+    display: flex;   /* <-- SHOW WHEN ACTIVE */
+  }
+  .nav-links a {
+    padding: 18px 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    margin-left: 20px;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: -50;
+    top: 50;
+    gap: 10px;
+  }
 }

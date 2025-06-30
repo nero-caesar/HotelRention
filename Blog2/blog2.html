@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="blog2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    <title>Document</title>
+    
+    <title>Luxestay Hotel Clone/Blog</title>
 </head>
+<script src="blog2.js"></script>
 <body>
+    <header class="navbar">
+  <div class="logo">
+    <img src="../Assets/rooms/luxestay_logo.png" alt="Logo">
+  </div>
+  <nav class="nav-links" id="nav-links">
+    <a href="../Home/home.html">Home</a>
+    <a href="../Room/Room.html">Rooms</a>
+    <a href="../About Us/aboutus.html">About Us</a>
+    <a href="../Blog/blog.html" class="a">Blog</a>
+    <a href="../Restaurant/restaurant.html">Restaurant</a>
+  </nav>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
     <section class="hero-nav">
         <nav>
             <img src="../Assets/home/luxestay_logo.png" alt="">
             <a href="../Home/home.html" >Home</a>
-            <a href="">Rooms</a>
+            <a href="../Room/Room.html">Rooms</a>
             <a href="../About Us/aboutus.html">About Us</a>
             <a href="../Blog/blog.html" class="a">Blog</a>
-            <a href="">Restaurant</a>
+            <a href="../Restaurant/restaurant.html">Restaurant</a>
         </nav>
         <div class="hero-sect">
             <h1>BLOG</h1>
@@ -47,9 +66,56 @@
         </h5>
         <button>VIEW MORE &rarr;</button>
     </div>
-    <div class="btn">
-        <a href=""><button>1</button></a>
-        <a href=""><button>2</button></a>
+     <div class="btn">
+        <a href="../Blog/blog.html"><button>1</button></a>
+        <a href="../Blog2/blog2.html"><button>2</button></a>
     </div>
+
+     <section class="section7">
+        <form action="">
+            <div class="section7-div1">
+                <p>Get Special Journy</p>
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <div class="section7-div2">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="section7-div2">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="section7-div2">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type Message" required></textarea>
+            </div>
+            <button type="submit">CHECK AVAILABILITY</button>
+        </form>
+        <div class="section7-div3">
+            <h1>LET’S START YOUR JOURENY WITH STAYEASE</h1>
+            <div class="section7-div4">
+                <p>+1 502 6251 7802</p>
+                <hr>
+                <button>CONTACT US</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div></div>
+        <div class="footer-links">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Room/Room.html">Rooms</a>
+            <a href="../About Us/aboutus.html">About Us</a>
+            <a href="../Blog/blog.html">Blog</a>
+            <a href="../Restaurant/restaurant.html">Restaurant</a>
+
+        </div>
+        <hr>
+        <div class="footer-div1">
+            <p>&copy; Luxestay. All Rights Reserved.</p>
+            <a href="">Privacy Policy</a>
+        </div>
+    </footer>
 </body>
 </html>

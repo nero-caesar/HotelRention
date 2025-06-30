@@ -46,9 +46,71 @@ nav a:hover{
 nav a:hover::after{
     transform: scaleX(1);
 }
+
+
+.navbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 0 24px;
+  height: 70px;
+  position: relative;
+  z-index: 1000;
+}
+.logo img {
+  height: 50px;
+}
+.nav-links a {
+    padding: 18px 0;
+  color: #fff;
+  width: 100%;
+  text-decoration: none;
+  font-size: 18px;
+  align-items: start;
+  margin-left: 20px;
+  /* position: relative; */
+  transition: color 0.2s;
+}
+.nav-links a.a {
+  color: rgb(255, 195, 118);
+}
+.nav-links a:hover {
+  color: rgb(255, 195, 118);
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 10px;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+}
+.hamburger span {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: rgb(255, 195, 118);
+  border-radius: 2px;
+  transition: all 0.3s;
+  gap: 10px;
+}
+
+/* Hamburger to X animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
 .hero-sect{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     gap: 30px;
     padding-bottom: 150px;
@@ -72,8 +134,8 @@ nav a:hover::after{
     
 }
 main{
-    padding-top: 50px;
-    padding-left: 80px;
+    margin-top: 50px;
+    margin-left: 80px;
     padding-bottom: 80px;
 }
 h1{
@@ -114,24 +176,22 @@ h3{
 }
 h5{
     padding-left: 80px;
-    background-color: rgb(221, 172, 109);
-    color: rgb(234, 236, 236);
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 15px;
+    /* background-color: rgb(221, 172, 109);   */
     font-weight: 100;
+    font-size: 20px;
+    height: 30px;
     margin-bottom: 30px;
+    align-items: center;
+    /* text-align: center; */
 }
 .la{
     padding-bottom: 30px;
 }
-button{
+.la button{
     background-color: rgb(247, 198, 135);
     margin-left: 80px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 12px;
-    padding-top: 12px;
+   width: 190px;
+   height: 55px;
     margin-bottom: 40px;
     border: none;
     transition: all 0.3s ease;
@@ -142,28 +202,414 @@ button:hover{
     transform: scale(1.05);
     
 }
-.btn {
+.btn{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    gap: 50px;
-    margin-right: 100px;
-}
-.btn a{
-    width: 40px;
-    height: 40px;
-
+    gap: 20px;
+    position: absolute;
+    left: 50%;
 }
 .btn a button{
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    align-items: center;
-    border-radius: 200%;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Nunito sans';
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e8bf96;
+    border: none;
+    border-radius: 100%;
 }
 .btn a button:hover{
-    background-color: rgb(240, 201, 150);
+    background-color: #000;
+    color: #e8bf96;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.section7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/Assets/home/your_comfort_bg1.png');
+    padding: 100px 0 0 0;
+    gap: 50px;
+    margin-top: 100px;
+}
+.section7-div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    gap: 40px;
+}
+form h1{
+    font-size: 50px;
+}
+form p{
+    letter-spacing: 7px;
+    font-size: 30px;
+}
+form input,
+form textarea{
+    outline: none;
+    border: 1px solid black;
+    width: 430px;
+    height: 50px;
+    padding-left: 20px;
+}
+form input:hover,
+form textarea:hover{
+    border: 1px solid rgb(255, 195, 118);
+}
+form input:focus,
+form textarea:focus{
+    border: 1.5px solid rgb(255, 195, 118);
+}
+form textarea{
+    resize: none;
+    height: 100px;
+    padding-top: 20px;
+}
+.section7-div2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+form button{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(232, 191, 150);
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+form button:hover{
+    background-color: rgb(255, 178, 78);
+}
+.section7-div3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 70px 0;
+    background-color: rgba(232, 191, 150, 0.8);
+}
+.section7-div3 h1{
+    font-size: 45px;
+    width: 730px;
+}
+.section7-div4{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.section7-div4 p{
+    font-size: 20px;
+}
+.section7-div4 hr{
+    border: none;
+    background-color: white;
+    width: 2px;
+    height: 200px;
+}
+.section7-div4 button{
+    border: none;
     color: white;
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 17px;
+}
+.section7-div4 button:hover{
+    background-color: rgba(121, 69, 0, 0.7);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0 30px 0;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+footer a:hover{
+    color: rgb(255, 178, 78);
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.footer-div1{
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    header{
+        display: flex;
+        background-color: black;
+    }
+  .nav-links {
+    /* position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #000; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* gap: 0; */
+    display: none;
+    /* z-index: 1001; */
+    
+  }
+  .nav-links.active {
+    display: flex;   /* <-- SHOW WHEN ACTIVE */
+  }
+  /* .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 10px;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+  } */
+
+  .hamburger span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: rgb(255, 195, 118);
+    border-radius: 2px;
+    transition: all 0.3s;
+    gap: 10px;
+  }
+
+  /* Hamburger to X animation */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .header nav a {
+    color: white;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+  }
+    /* General Fixes */
+  .hero-nav {
+    background-size: cover;
+    background-position: center;
+    gap: 60px;
+    height: auto;
+    /* padding: 20px 10px; */
+  }
+
+  .hero-nav nav {
+    display: none; /* Hide desktop nav */
+  }
+.navbar{
+    display: flex;
+    align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 0 24px;
+  height: 70px;
+  position: relative;
+  z-index: 1000;
+}
+.navbar a{
+    display: flex;
+}
+  .hero-sect h1 {
+    font-size: 32px;
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .hero-sect p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
+    .writeup {
+        width: 100%;
+        height: 550px;
+        /* padding: 20px; */
+    }
+
+    main {
+        margin: 30px 20px 0 20px;
+        padding-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .clu {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    p {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .men img {
+        width: 87%;
+        padding: 0 20px 40px 20px;
+    }
+    .la h3{
+        font-size: 28px;
+        margin-right: 50px;
+    }
+    .la{
+        transform: translateX(-50px);
+    }
+    .la h4{
+        font-size: 16px;
+    }
+
+    .la button {
+        width: 200px;
+        margin-left: 50;
+        font-size: 16px;
+        height: 50px;
+        margin-top: 90px;
+    }
+
+    .btn {
+        position: relative;
+        left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .btn a button {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+  
+  form{
+        width: 95vw;
+        height: 120vh;
+        gap: 20px;
+    }
+    form h1{
+        font-size: 30px;
+        color: rgb(18, 18, 20);
+    }
+    form p{
+        font-size: 20px;
+        color: rgb(18, 18, 20);
+    }
+    form input,
+    form textarea{
+        width: 80vw;
+    }
+    form button{
+        width: 87vw;
+    }
+    .section7-div3{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section7-div3 h1{
+        font-size: 30px;
+        width: 90vw;
+        line-height: 70px;
+        color: rgb(18, 18, 20);
+    }
+    .section7-div4{
+        flex-direction: column;
+    }
+    .section7-div4 hr{
+        width: 90vw;
+        height: 2px;
+    }
+    .footer-links{
+        align-items: center;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-links1{
+        flex-direction: column;
+        gap: 1px;
+    }
+    .footer-links2{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-div1{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #000;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+
+  }
+  .nav-links.active {
+    display: flex;   /* <-- SHOW WHEN ACTIVE */
+  }
+  .nav-links a {
+    padding: 18px 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    margin-left: 20px;
+  }
+  .hamburger {
+    display: flex;
+    position: static; /* Let flexbox handle the position */
+    margin-left: auto; /* Pushes hamburger to the far right */
+    gap: 10px;
+  }
 }
